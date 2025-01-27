@@ -3,7 +3,7 @@ import numpy as np
 from scipy.sparse import csc_matrix
 from scipy.sparse.linalg import svds
 
-
+# Class for Popularity-Based Recommender System
 class PopularityRecommender:
     def __init__(self):
         self.train_data = None
