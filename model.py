@@ -81,7 +81,7 @@ class ItemSimilarityRecommender:
         )
         return recommendations
 
-# SVD-Based Collaborative Filtering
+
 def compute_svd(urm, k):
     U, s, Vt = svds(urm, k=k)
     dim = (len(s), len(s))
