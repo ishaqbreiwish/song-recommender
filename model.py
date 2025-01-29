@@ -90,7 +90,7 @@ def compute_svd(urm, k):
         S[i, i] = np.sqrt(s[i])
     return csc_matrix(U, dtype=np.float32), csc_matrix(S, dtype=np.float32), csc_matrix(Vt, dtype=np.float32)
 
-#hiobfoiwebfwie
+
 def compute_estimated_ratings(urm, U, S, Vt, u_test, k):
     right_term = S @ Vt
     estimated_ratings = np.zeros(shape=(urm.shape[0], urm.shape[1]), dtype=np.float16)
